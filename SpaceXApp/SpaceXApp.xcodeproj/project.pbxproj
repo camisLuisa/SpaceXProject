@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E46C1CE284939D6003D5C9E /* SpaceXViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E46C1CD284939D6003D5C9E /* SpaceXViewModel.swift */; };
+		1E46C1D328493A16003D5C9E /* SpaceXViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E46C1D228493A16003D5C9E /* SpaceXViewModelTests.swift */; };
 		1E8EF3EC2847E9C300C296DE /* CompanyInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8EF3EB2847E9C300C296DE /* CompanyInfoResponse.swift */; };
 		1E8EF3EE2847EA2B00C296DE /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8EF3ED2847EA2B00C296DE /* NetworkError.swift */; };
 		1E8EF3F22847F35100C296DE /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8EF3F12847F35100C296DE /* Parsing.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E46C1CD284939D6003D5C9E /* SpaceXViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXViewModel.swift; sourceTree = "<group>"; };
+		1E46C1D228493A16003D5C9E /* SpaceXViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXViewModelTests.swift; sourceTree = "<group>"; };
 		1E8EF3EB2847E9C300C296DE /* CompanyInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInfoResponse.swift; sourceTree = "<group>"; };
 		1E8EF3ED2847EA2B00C296DE /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		1E8EF3F12847F35100C296DE /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
@@ -83,6 +87,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E46C1CC284939B9003D5C9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E46C1CD284939D6003D5C9E /* SpaceXViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E46C1CF284939E6003D5C9E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1EB546E52843D1DE00456D1D /* SpaceXServiceTests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1E46C1D1284939FF003D5C9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E46C1D228493A16003D5C9E /* SpaceXViewModelTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1E8EF3EA2847E9AD00C296DE /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,8 +158,8 @@
 		1EB546B72843C99E00456D1D /* SpaceXApp */ = {
 			isa = PBXGroup;
 			children = (
+				1E46C1CC284939B9003D5C9E /* View */,
 				1E8EF3EF2847F32E00C296DE /* Utilities */,
-				1E8EF3EA2847E9AD00C296DE /* Model */,
 				1EB546E22843CCB700456D1D /* Service */,
 				1EB546B82843C99E00456D1D /* SpaceXAppApp.swift */,
 				1EB546BA2843C99E00456D1D /* ContentView.swift */,
@@ -152,8 +180,9 @@
 		1EB546C82843C9A000456D1D /* SpaceXAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				1E46C1D1284939FF003D5C9E /* View */,
+				1E46C1CF284939E6003D5C9E /* Service */,
 				1EB546C92843C9A000456D1D /* SpaceXAppTests.swift */,
-				1EB546E52843D1DE00456D1D /* SpaceXServiceTests.swift */,
 				1E8EF3F328480B9A00C296DE /* XCTestCaseExtension.swift */,
 			);
 			path = SpaceXAppTests;
@@ -171,6 +200,7 @@
 		1EB546E22843CCB700456D1D /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				1E8EF3EA2847E9AD00C296DE /* Model */,
 				1EB546E32843CCDD00456D1D /* SpaceXService.swift */,
 				1E8EF3ED2847EA2B00C296DE /* NetworkError.swift */,
 			);
@@ -310,6 +340,7 @@
 				1EB546BB2843C99E00456D1D /* ContentView.swift in Sources */,
 				1EB546E42843CCDD00456D1D /* SpaceXService.swift in Sources */,
 				1E8EF3EC2847E9C300C296DE /* CompanyInfoResponse.swift in Sources */,
+				1E46C1CE284939D6003D5C9E /* SpaceXViewModel.swift in Sources */,
 				1EB546B92843C99E00456D1D /* SpaceXAppApp.swift in Sources */,
 				1E8EF3F22847F35100C296DE /* Parsing.swift in Sources */,
 				1E8EF3EE2847EA2B00C296DE /* NetworkError.swift in Sources */,
@@ -320,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E46C1D328493A16003D5C9E /* SpaceXViewModelTests.swift in Sources */,
 				1EB546CA2843C9A000456D1D /* SpaceXAppTests.swift in Sources */,
 				1E8EF3F428480B9A00C296DE /* XCTestCaseExtension.swift in Sources */,
 				1EB546E62843D1DE00456D1D /* SpaceXServiceTests.swift in Sources */,
