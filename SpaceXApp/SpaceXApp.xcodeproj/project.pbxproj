@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E133974285769570072B0C9 /* DispatchQueueWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E133973285769570072B0C9 /* DispatchQueueWrapper.swift */; };
 		1E46C1CE284939D6003D5C9E /* SpaceXViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E46C1CD284939D6003D5C9E /* SpaceXViewModel.swift */; };
 		1E46C1D328493A16003D5C9E /* SpaceXViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E46C1D228493A16003D5C9E /* SpaceXViewModelTests.swift */; };
+		1E46C1DD284BDB02003D5C9E /* SpaceXServiceWithCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E46C1DC284BDB01003D5C9E /* SpaceXServiceWithCompletion.swift */; };
+		1E46C1E0284BF0AC003D5C9E /* SpaceXServiceWithCompletionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E46C1DF284BF0AC003D5C9E /* SpaceXServiceWithCompletionTests.swift */; };
+		1E46C1E3284BF1B4003D5C9E /* UrlSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E46C1E2284BF1B4003D5C9E /* UrlSessionMock.swift */; };
+		1E5AFC19285921F800606883 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5AFC18285921F800606883 /* MockURLSessionDataTask.swift */; };
+		1E5AFC1B2859238B00606883 /* DispatchQueueWrapperProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5AFC1A2859238B00606883 /* DispatchQueueWrapperProtocolMock.swift */; };
 		1E8EF3EC2847E9C300C296DE /* CompanyInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8EF3EB2847E9C300C296DE /* CompanyInfoResponse.swift */; };
 		1E8EF3EE2847EA2B00C296DE /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8EF3ED2847EA2B00C296DE /* NetworkError.swift */; };
 		1E8EF3F22847F35100C296DE /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8EF3F12847F35100C296DE /* Parsing.swift */; };
@@ -42,8 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E133973285769570072B0C9 /* DispatchQueueWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueWrapper.swift; sourceTree = "<group>"; };
 		1E46C1CD284939D6003D5C9E /* SpaceXViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXViewModel.swift; sourceTree = "<group>"; };
 		1E46C1D228493A16003D5C9E /* SpaceXViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXViewModelTests.swift; sourceTree = "<group>"; };
+		1E46C1DC284BDB01003D5C9E /* SpaceXServiceWithCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXServiceWithCompletion.swift; sourceTree = "<group>"; };
+		1E46C1DF284BF0AC003D5C9E /* SpaceXServiceWithCompletionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXServiceWithCompletionTests.swift; sourceTree = "<group>"; };
+		1E46C1E2284BF1B4003D5C9E /* UrlSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlSessionMock.swift; sourceTree = "<group>"; };
+		1E5AFC18285921F800606883 /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
+		1E5AFC1A2859238B00606883 /* DispatchQueueWrapperProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueWrapperProtocolMock.swift; sourceTree = "<group>"; };
 		1E8EF3EB2847E9C300C296DE /* CompanyInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInfoResponse.swift; sourceTree = "<group>"; };
 		1E8EF3ED2847EA2B00C296DE /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		1E8EF3F12847F35100C296DE /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
@@ -111,6 +123,33 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		1E46C1DB284BDAC8003D5C9E /* ServiceWithCompletion */ = {
+			isa = PBXGroup;
+			children = (
+				1E46C1DC284BDB01003D5C9E /* SpaceXServiceWithCompletion.swift */,
+			);
+			path = ServiceWithCompletion;
+			sourceTree = "<group>";
+		};
+		1E46C1DE284BF097003D5C9E /* ServiceWithCompletion */ = {
+			isa = PBXGroup;
+			children = (
+				1E46C1E1284BF1A3003D5C9E /* Mock */,
+				1E46C1DF284BF0AC003D5C9E /* SpaceXServiceWithCompletionTests.swift */,
+			);
+			path = ServiceWithCompletion;
+			sourceTree = "<group>";
+		};
+		1E46C1E1284BF1A3003D5C9E /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				1E46C1E2284BF1B4003D5C9E /* UrlSessionMock.swift */,
+				1E5AFC18285921F800606883 /* MockURLSessionDataTask.swift */,
+				1E5AFC1A2859238B00606883 /* DispatchQueueWrapperProtocolMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		1E8EF3EA2847E9AD00C296DE /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				1E8EF3F02847F33700C296DE /* Parsing */,
+				1E133973285769570072B0C9 /* DispatchQueueWrapper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -158,9 +198,10 @@
 		1EB546B72843C99E00456D1D /* SpaceXApp */ = {
 			isa = PBXGroup;
 			children = (
+				1E46C1DB284BDAC8003D5C9E /* ServiceWithCompletion */,
 				1E46C1CC284939B9003D5C9E /* View */,
 				1E8EF3EF2847F32E00C296DE /* Utilities */,
-				1EB546E22843CCB700456D1D /* Service */,
+				1EB546E22843CCB700456D1D /* ServiceWithCombine */,
 				1EB546B82843C99E00456D1D /* SpaceXAppApp.swift */,
 				1EB546BA2843C99E00456D1D /* ContentView.swift */,
 				1EB546BC2843C9A000456D1D /* Assets.xcassets */,
@@ -180,6 +221,7 @@
 		1EB546C82843C9A000456D1D /* SpaceXAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				1E46C1DE284BF097003D5C9E /* ServiceWithCompletion */,
 				1E46C1D1284939FF003D5C9E /* View */,
 				1E46C1CF284939E6003D5C9E /* Service */,
 				1EB546C92843C9A000456D1D /* SpaceXAppTests.swift */,
@@ -197,14 +239,14 @@
 			path = SpaceXAppUITests;
 			sourceTree = "<group>";
 		};
-		1EB546E22843CCB700456D1D /* Service */ = {
+		1EB546E22843CCB700456D1D /* ServiceWithCombine */ = {
 			isa = PBXGroup;
 			children = (
 				1E8EF3EA2847E9AD00C296DE /* Model */,
 				1EB546E32843CCDD00456D1D /* SpaceXService.swift */,
 				1E8EF3ED2847EA2B00C296DE /* NetworkError.swift */,
 			);
-			path = Service;
+			path = ServiceWithCombine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +382,8 @@
 				1EB546BB2843C99E00456D1D /* ContentView.swift in Sources */,
 				1EB546E42843CCDD00456D1D /* SpaceXService.swift in Sources */,
 				1E8EF3EC2847E9C300C296DE /* CompanyInfoResponse.swift in Sources */,
+				1E46C1DD284BDB02003D5C9E /* SpaceXServiceWithCompletion.swift in Sources */,
+				1E133974285769570072B0C9 /* DispatchQueueWrapper.swift in Sources */,
 				1E46C1CE284939D6003D5C9E /* SpaceXViewModel.swift in Sources */,
 				1EB546B92843C99E00456D1D /* SpaceXAppApp.swift in Sources */,
 				1E8EF3F22847F35100C296DE /* Parsing.swift in Sources */,
@@ -352,7 +396,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E46C1D328493A16003D5C9E /* SpaceXViewModelTests.swift in Sources */,
+				1E46C1E0284BF0AC003D5C9E /* SpaceXServiceWithCompletionTests.swift in Sources */,
+				1E46C1E3284BF1B4003D5C9E /* UrlSessionMock.swift in Sources */,
 				1EB546CA2843C9A000456D1D /* SpaceXAppTests.swift in Sources */,
+				1E5AFC19285921F800606883 /* MockURLSessionDataTask.swift in Sources */,
+				1E5AFC1B2859238B00606883 /* DispatchQueueWrapperProtocolMock.swift in Sources */,
 				1E8EF3F428480B9A00C296DE /* XCTestCaseExtension.swift in Sources */,
 				1EB546E62843D1DE00456D1D /* SpaceXServiceTests.swift in Sources */,
 			);
